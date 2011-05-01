@@ -1,0 +1,15 @@
+# Build stuff
+*.dll
+*.exe
+*.o
+*.so
+
+
+# OS stuff
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Editor stuff
+*~
