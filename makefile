@@ -1,11 +1,14 @@
 # This needs to be done much better
-# Use: **/*.o for any depth using GNUMake 3.81+
-OBJS = *.o #*/*.o
+
 CC = g++
+OBJS = $(patsubst %.cpp,%.o,$(wildcard *.cpp))
+
 DEBUG = -g
-CFLAGS = -Wall -c $(DEBUG) -Iincludes
-LFLAGS = -Wall -lsfml-graphics -lsfml-window -lsfml-system $(DEBUG)
 PNAME = game
+INCLUDES = -Iheaders
+
+CFLAGS = -Wall $(DEBUG)
+LFLAGS = -Wall -lsfml-graphics -lsfml-window -lsfml-system $(DEBUG)
 
 all: build
 
@@ -15,6 +18,6 @@ build: $(OBJS)
 clean:
 	\rm *.o *~ $(PNAME)
 
-.cpp:
-	$(CC) $(CFLAGS) -c $(.SOURCE)
+%.o: %.cpp
+	$(CC) $(CFLAGS) $(INCLUDES) -c $^ -o $@
 
