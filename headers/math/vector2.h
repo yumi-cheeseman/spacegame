@@ -37,5 +37,8 @@ class Vector2
 		T X, Y;
 };
 
+template class Vector2<float>;
+template class Vector2<double>;
+
 #endif /* INCLUDES_MATH_VECTOR2_H */
 
