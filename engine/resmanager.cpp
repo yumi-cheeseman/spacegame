@@ -14,8 +14,13 @@ namespace Engine
 		for(class std::list<Resource<T>*>::iterator i = m_Resources.begin(); i != m_Resources.end(); ++i)
 		{
 			if((*i)->Path.compare(Path) == 0)
+			{
 				if((*i)->Filename.compare(Filename) == 0)
+				{
+					(*i)->Reference();
 					return (*i);
+				}
+			}
 		}
 		
 		std::string Fullpath = Path;

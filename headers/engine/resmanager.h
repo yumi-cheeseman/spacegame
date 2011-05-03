@@ -23,7 +23,12 @@ namespace Engine
 				: Path(Path), Filename(Filename), Underlying(Underlying), m_Manager(Manager), m_Refs(1)
 			{ }
 			
-			void Free()
+			void Reference( void )
+			{
+				++m_Refs;
+			}
+			
+			void Free( void )
 			{
 				--m_Refs;
 				
