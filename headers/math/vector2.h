@@ -37,8 +37,8 @@ class Vector2
 		T X, Y;
 };
 
-template class Vector2<float>;
-template class Vector2<double>;
+template class Vector2<float>::Vector2( void );
+template class Vector2<double>::Vector2( void );
 
 #endif /* INCLUDES_MATH_VECTOR2_H */
 
