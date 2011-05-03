@@ -63,7 +63,7 @@ Vector2<T> Vector2<T>::operator/(  Vector2<T> V )
 template <class T>
 T Vector2<T>::Length( void )
 {
-	return 1 / FastInverseSqrt<T>(X*X + Y*Y);
+	return 1 / (T)FastInverseSqrt((float)X*X + Y*Y);
 }
 
 template <class T>
@@ -76,7 +76,7 @@ T Vector2<T>::Length2( void )
 template <class T>
 void Vector2<T>::Normalize( void )
 {
-	T Mag = FastInverseSqrt<T>(X*X + Y*Y);
+	T Mag = (T)FastInverseSqrt((float)X*X + Y*Y);
 	X *= Mag;
 	Y *= Mag;
 }
@@ -99,17 +99,16 @@ T Vector2<T>::DotProduct( Vector2<T> V )
 // Aprox. 4x as fast
 // http://betterexplained.com/articles/understanding-quakes-fast-inverse-square-root/
 // http://en.wikipedia.org/wiki/Fast_inverse_square_root
-template <class T>
-T FastInverseSqrt( T Number )
+float FastInverseSqrt( float Number )
 {
         long i;
-        T x2, y;
+        float x2, y;
 
         x2 = Number * 0.5F;
         y  = Number;
         i  = * ( long * ) &y;
         i  = 0x5f375a86 - ( i >> 1 );
-        y  = * ( T * ) &i;
+        y  = * ( float* ) &i;
         y  = y * ( 1.5F - ( x2 * y * y ) );
         
         return y;
