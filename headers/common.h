@@ -13,5 +13,7 @@
 // 64 meters to the pixel
 #define PIXELS_METER_RATIO 64
 
+typedef double Timestep;
+
 #endif /* INCLUDES_COMMON_H */
 

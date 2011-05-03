@@ -24,3 +24,15 @@ Vector2<double> Body::GetAbsolutePosition( void )
 	return Result;
 }
 
+void Body::Update(const Timestep Delta)
+{
+	for( std::list<Body*>::iterator i = m_Children.begin(); i != m_Children.end(); ++i )
+		(*i)->Update(Delta);
+}
+
+void Body::Draw(sf::RenderTarget& Target)
+{
+	for( std::list<Body*>::iterator i = m_Children.begin(); i != m_Children.end(); ++i )
+		(*i)->Draw(Target);
+}
+
