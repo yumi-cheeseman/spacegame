@@ -13,13 +13,16 @@ class Body
 		virtual ~Body() { }
 		
 		// Relative to its parents.
-		Vector2<double> GetRelativePosition( void );
+		Vector2<double> GetPosition( void );
 		
-		// Gets the position, compared to space
-		// For example, Moon + Planet + Solar System + Galaxy + Space
-		// You should override this for satellites, to take into account
-		// its orbit around another body.
-		virtual Vector2<double> GetAbsolutePosition( void );
+		// Gets the position, compared to space.
+		Vector2<double> GetAbsolutePosition( void );
+
+		//Returns the parent
+		Body* GetParent(void);
+		
+		//Update
+		virtual void Tick(void);
 	
 	protected:
 		Vector2<double> m_Position;

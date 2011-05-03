@@ -14,6 +14,7 @@ class Vector2
 		// Arithmetic
 		Vector2<T> operator+( Vector2<T> V );
 		Vector2<T> operator-( Vector2<T> V );
+		void operator+=( Vector2<T> V );
 	
 		// Multiplication
 		Vector2<T> operator*( T S );

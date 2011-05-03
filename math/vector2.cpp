@@ -29,6 +29,13 @@ Vector2<T> Vector2<T>::operator-( Vector2<T> V )
 	return Result;
 }
 
+template <class T>
+void Vector2<T>::operator+=( Vector2<T> V )
+{
+	//Vector2<T> Result = Vector2<T>( X + V.X, Y + V.Y );
+	*this = *this + V;
+}
+
 // Multiplication
 template <class T>
 Vector2<T> Vector2<T>::operator*( T S )

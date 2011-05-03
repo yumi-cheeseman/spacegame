@@ -13,5 +13,9 @@
 // 64 meters to the pixel
 #define PIXELS_METER_RATIO 64
 
+#ifndef NULL
+#define NULL 0
+#endif
+
 #endif /* INCLUDES_COMMON_H */
 
