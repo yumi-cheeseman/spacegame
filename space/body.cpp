@@ -5,6 +5,10 @@ Body::Body(const Vector2<double>& Position, const double Radius, Body* Parent)
 {
 }
 
+Body::Body() : m_Position(0,0), m_Radius(0), m_Parent(0)
+{
+}
+
 Vector2<double> Body::GetPosition( void )
 {
 	return m_Position;
@@ -26,6 +30,11 @@ Vector2<double> Body::GetAbsolutePosition( void )
 	}
 	
 	return result;
+}
+
+void Body::SetPosition(Vector2<double> newPosition)
+{
+	m_Position = newPosition;
 }
 
 void Body::Tick(void)

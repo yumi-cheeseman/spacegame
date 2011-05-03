@@ -83,6 +83,7 @@
     <ClCompile Include="math\vector2.cpp" />
     <ClCompile Include="pnoise\pnoise.cpp" />
     <ClCompile Include="space\body.cpp" />
+    <ClCompile Include="space\planet.cpp" />
     <ClCompile Include="ssystem\ssystem.cpp" />
   </ItemGroup>
   <ItemGroup>

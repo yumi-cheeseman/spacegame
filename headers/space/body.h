@@ -10,6 +10,7 @@ class Body
 {
 	public:
 		Body(const Vector2<double>& Position, const double Radius, Body* Parent = 0);
+		Body();
 		virtual ~Body() { }
 		
 		// Relative to its parents.
@@ -17,6 +18,9 @@ class Body
 		
 		// Gets the position, compared to space.
 		Vector2<double> GetAbsolutePosition( void );
+
+		// Guess
+		void SetPosition(Vector2<double> newPosition);
 
 		//Returns the parent
 		Body* GetParent(void);

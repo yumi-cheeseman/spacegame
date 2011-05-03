@@ -54,6 +54,9 @@
     <ClCompile Include="ssystem\ssystem.cpp">
       <Filter>Source Files\ssystem</Filter>
     </ClCompile>
+    <ClCompile Include="space\planet.cpp">
+      <Filter>Source Files\space</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\common.h">

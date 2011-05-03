@@ -7,6 +7,8 @@
 class Planet : public Body
 {
 	public:
+		Planet(int seed = -1);
+		~Planet();
 };
 
 #endif /* INCLUDES_SSYTEM_H */
