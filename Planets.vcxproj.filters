@@ -42,6 +42,18 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="math\vector2.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="pnoise\pnoise.cpp">
+      <Filter>Source Files\pnoise</Filter>
+    </ClCompile>
+    <ClCompile Include="space\body.cpp">
+      <Filter>Source Files\space</Filter>
+    </ClCompile>
+    <ClCompile Include="ssystem\ssystem.cpp">
+      <Filter>Source Files\ssystem</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\common.h">
