@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\math">
+      <UniqueIdentifier>{867f007d-060d-4bfd-98af-b8c1bb45f0f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pnoise">
+      <UniqueIdentifier>{9fef8708-cde3-4088-b1a6-f5571cb4e842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ssystem">
+      <UniqueIdentifier>{8ad8a36d-8ca7-4a1c-88a7-63ea4435e599}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\space">
+      <UniqueIdentifier>{95c39355-087a-4bf9-92b7-ebf93f92ca9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{a0accbdf-c27d-4a18-805b-5a249503fdba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pnoise">
+      <UniqueIdentifier>{012a5d37-f284-418a-9537-05479028592c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ssystem">
+      <UniqueIdentifier>{7bdb77cc-159e-4bd4-bd51-e3301321c606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\space">
+      <UniqueIdentifier>{c6f84fa8-dedc-4fbc-9b33-a801bfe5ac4a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\math\vector2.h">
+      <Filter>Header Files\math</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\pnoise\pnoise.h">
+      <Filter>Header Files\pnoise</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\space\body.h">
+      <Filter>Header Files\space</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\space\planet.h">
+      <Filter>Header Files\space</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ssystem\ssystem.h">
+      <Filter>Header Files\ssystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
